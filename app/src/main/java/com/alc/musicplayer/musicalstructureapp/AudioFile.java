@@ -7,9 +7,9 @@ public class AudioFile
     /** Name of song artist translation of word */
     private String mArtistName;
     /** Album title of song if there is one */
-    private String mAlbumTitle = "";
+    private String mAlbumTitle;
     /** Album art of song if there is one */
-    private int mAlbumArtImageResourceId = NO_IMAGE_RESOURCE_ID;
+    private int mAlbumArtImageResourceId;
 
     private static final int NO_IMAGE_RESOURCE_ID = -1;
 
@@ -58,7 +58,7 @@ public class AudioFile
 
     /**
      * Returns the song title
-     * @return
+     * @return title of song
      */
     public String getSongTitle()
     {
@@ -67,7 +67,7 @@ public class AudioFile
 
     /**
      * Returns the name of the artist
-     * @return
+     * @return name of artist
      */
     public String getArtistName()
     {
@@ -76,13 +76,13 @@ public class AudioFile
 
     /**
      * Returns the album title
-     * @return
+     * @return title of album
      */
     public String  getAlbumTitle() { return mAlbumTitle; }
 
     /**
-     *
-     * @return
+     * Checks if the song of the audio file has an album title
+     * @return if audio file has an album title
      */
     public boolean hasAlbumTitle()
     {
@@ -91,13 +91,13 @@ public class AudioFile
 
     /**
      * Returns the album art image resource id for the word
-     * @return
+     * @return the album art of the song if any exists
      */
     public int  getAlbumArt() { return mAlbumArtImageResourceId; }
 
     /**
-     *
-     * @return
+     * Checks if the song of the audio file has an album art
+     * @return true if audio file has an album art, and false if not
      */
     public boolean hasAlbumArtImageResourceId()
     {

@@ -63,10 +63,6 @@ public class ListenNowActivity extends AppCompatActivity {
         // drop activity from memory
         finish();
 
-        // kill the current activity
-        int pid = android.os.Process.myPid();
-        android.os.Process.killProcess(pid);
-
         System.exit(0);
     }
 

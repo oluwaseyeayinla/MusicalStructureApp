@@ -33,8 +33,8 @@ public class NowPlayingActivity extends AppCompatActivity {
         if (artistName != null)
         {
             String albumTitle = getAlbumTitle(savedInstanceState);
-            String postText =  albumTitle != null && !albumTitle.isEmpty() ? albumTitle : songTitle;
-            artistAndAlbumTextView.setText(artistName + " - " + postText);
+            albumTitle =  albumTitle != null && !albumTitle.isEmpty() ? albumTitle : songTitle;
+            artistAndAlbumTextView.setText(getString(R.string.artist_with_album, artistName, albumTitle));
         }
 
         albumArtImageView = (ImageView) findViewById(R.id.album_art_image_view);

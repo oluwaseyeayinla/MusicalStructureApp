@@ -42,6 +42,6 @@
         android:gravity="center"
         android:horizontalSpacing="12dp"
         android:numColumns="auto_fit"
-        android:verticalSpacing="24dp"></GridView>
+        android:verticalSpacing="24dp"/>
 
 </LinearLayout>

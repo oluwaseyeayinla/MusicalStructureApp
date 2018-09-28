@@ -57,7 +57,7 @@
             android:layout_marginLeft="8dp"
             android:layout_marginStart="8dp"
             android:gravity="start"
-            android:text="1:05"
+            android:text="@string/dummy_elapsed_time"
             android:textAlignment="textStart"
             android:textColor="@android:color/black"
             android:textSize="12sp" />
@@ -71,7 +71,7 @@
             android:layout_marginEnd="8dp"
             android:layout_marginRight="8dp"
             android:gravity="end"
-            android:text="-1:57"
+            android:text="@string/dummy_remaining_time"
             android:textAlignment="textEnd"
             android:textColor="@android:color/black"
             android:textSize="12sp" />
@@ -94,7 +94,7 @@
         android:id="@+id/album_artist_title_text_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Artist - Album Title"
+        android:text="@string/artist_with_album_title"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="18sp" />

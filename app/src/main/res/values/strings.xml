@@ -12,4 +12,9 @@
     <string name="album_title">Album Title</string>
 
     <string name="todo">TODO</string>
+    <string name="dummy_elapsed_time">1:05</string>
+    <string name="dummy_remaining_time">-1:57</string>
+
+    <string name="artist_with_album">%s - %s</string>
+    <string name="artist_with_album_title">Artist - Album Title</string>
 </resources>

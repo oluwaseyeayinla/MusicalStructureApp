@@ -13,8 +13,6 @@ import java.util.ArrayList;
 
 public class AudioFileAdapter extends ArrayAdapter<AudioFile> {
 
-    private static final String LOG_TAG = AudioFileAdapter.class.getSimpleName();
-
     /**
      * This is our own custom constructor (it doesn't mirror a superclass constructor).
      * The context is used to inflate the layout file, and the list is the data we want
@@ -80,7 +78,9 @@ public class AudioFileAdapter extends ArrayAdapter<AudioFile> {
         TextView artistName = (TextView) listItemView.findViewById(R.id.artist_name);
         if(currentFile.hasAlbumTitle())
         {
-            artistName.setText(currentFile.getArtistName() + " - " + currentFile.getAlbumTitle());
+            String artistWithAlbum = getContext().getString(R.string.artist_with_album,
+                    currentFile.getArtistName(), currentFile.getAlbumTitle());
+            artistName.setText(artistWithAlbum);
         }
         else
         {
