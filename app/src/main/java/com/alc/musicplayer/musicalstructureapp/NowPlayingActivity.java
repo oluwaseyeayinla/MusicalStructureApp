@@ -1,16 +1,9 @@
 package com.alc.musicplayer.musicalstructureapp;
 
-import android.content.Intent;
-import android.media.Image;
-import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.SeekBar;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class NowPlayingActivity extends AppCompatActivity {
 
